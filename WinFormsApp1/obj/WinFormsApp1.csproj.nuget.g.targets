@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)tesseract\5.2.0\build\Tesseract.targets" Condition="Exists('$(NuGetPackageRoot)tesseract\5.2.0\build\Tesseract.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+    <Import Project="$(NuGetPackageRoot)ironocr\2024.10.3\buildTransitive\net6.0\IronOcr.targets" Condition="Exists('$(NuGetPackageRoot)ironocr\2024.10.3\buildTransitive\net6.0\IronOcr.targets')" />
+    <Import Project="$(NuGetPackageRoot)ironocr.languages.korean\2024.6.1\build\IronOcr.Languages.Korean.targets" Condition="Exists('$(NuGetPackageRoot)ironocr.languages.korean\2024.6.1\build\IronOcr.Languages.Korean.targets')" />
+  </ImportGroup>
+</Project>
